@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   title = 'Angularapp';
+  isExpanded = true;
+  isShowing = false;
+  showSubmenu: boolean = false;
+  showSubSubMenu: boolean = false;
 }
